@@ -1,0 +1,580 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOLE STORE | Mode, Vêtements & Chaussures</title>
+
+    <meta name="description" content="YOLE STORE - Boutique de mode à Jacmel, Haïti. Vêtements, chaussures et accessoires pour hommes, femmes et enfants.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="top-bar">
+            <p>🚚 Livraison disponible à Jacmel</p>
+            <p>📞 33 284 730</p>
+        </div>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>YOLE</span> STORE
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li><a href="#hommes">Hommes</a></li>
+                <li><a href="#femmes">Femmes</a></li>
+                <li><a href="#chaussures">Chaussures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <button title="Rechercher">🔍</button>
+                <button title="Compte">👤</button>
+                <button title="Panier">🛒 <span id="cart-count">0</span></button>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section id="accueil" class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-small-title">BIENVENUE CHEZ YOLE STORE</p>
+
+                <h1>
+                    Ton style.<br>
+                    Ton choix.<br>
+                    <span>Ton identité.</span>
+                </h1>
+
+                <p>
+                    Découvrez notre sélection de vêtements,
+                    chaussures et accessoires tendance.
+                </p>
+
+                <a href="#boutique" class="btn-primary">
+                    Découvrir la collection
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories">
+
+            <div class="section-title">
+                <p>EXPLOREZ</p>
+                <h2>Nos catégories</h2>
+            </div>
+
+            <div class="category-container">
+
+                <a href="#hommes" class="category-card">
+                    <div class="category-icon">👕</div>
+                    <h3>Hommes</h3>
+                    <p>Découvrez notre collection homme</p>
+                </a>
+
+                <a href="#femmes" class="category-card">
+                    <div class="category-icon">👗</div>
+                    <h3>Femmes</h3>
+                    <p>Les dernières tendances féminines</p>
+                </a>
+
+                <a href="#chaussures" class="category-card">
+                    <div class="category-icon">👟</div>
+                    <h3>Chaussures</h3>
+                    <p>Sneakers, sandales et chaussures</p>
+                </a>
+
+                <a href="#accessoires" class="category-card">
+                    <div class="category-icon">👜</div>
+                    <h3>Accessoires</h3>
+                    <p>Complétez votre style</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOUTIQUE ================= -->
+        <section id="boutique" class="products-section">
+
+            <div class="section-title">
+                <p>NOTRE SÉLECTION</p>
+                <h2>Produits populaires</h2>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter active" data-category="all">Tout</button>
+                <button class="filter" data-category="homme">Hommes</button>
+                <button class="filter" data-category="femme">Femmes</button>
+                <button class="filter" data-category="chaussure">Chaussures</button>
+                <button class="filter" data-category="accessoire">Accessoires</button>
+            </div>
+
+
+            <div class="products-grid">
+
+
+                <!-- PRODUIT 1 -->
+                <article class="product-card" data-category="homme">
+
+                    <div class="product-image">
+                        <span class="badge">Nouveau</span>
+                        <div class="placeholder-image">👕</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Homme</p>
+                        <h3>T-Shirt Premium</h3>
+                        <p class="product-description">
+                            T-shirt moderne et confortable.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>1 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="T-Shirt Premium"
+                                data-price="1500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 2 -->
+                <article class="product-card" data-category="homme">
+
+                    <div class="product-image">
+                        <span class="badge sale">Promo</span>
+                        <div class="placeholder-image">👔</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Homme</p>
+                        <h3>Polo Classique</h3>
+                        <p class="product-description">
+                            Polo élégant pour toutes occasions.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>2 000 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Polo Classique"
+                                data-price="2000">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 3 -->
+                <article class="product-card" data-category="homme">
+
+                    <div class="product-image">
+                        <div class="placeholder-image">👖</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Homme</p>
+                        <h3>Jean Slim</h3>
+                        <p class="product-description">
+                            Jean tendance avec coupe moderne.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>3 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Jean Slim"
+                                data-price="3500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 4 -->
+                <article class="product-card" data-category="femme">
+
+                    <div class="product-image">
+                        <span class="badge">Nouveau</span>
+                        <div class="placeholder-image">👗</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Femme</p>
+                        <h3>Robe Élégante</h3>
+                        <p class="product-description">
+                            Une robe élégante pour vos occasions spéciales.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>3 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Robe Élégante"
+                                data-price="3500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 5 -->
+                <article class="product-card" data-category="femme">
+
+                    <div class="product-image">
+                        <div class="placeholder-image">👚</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Femme</p>
+                        <h3>Ensemble Femme</h3>
+                        <p class="product-description">
+                            Ensemble tendance et confortable.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>4 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Ensemble Femme"
+                                data-price="4500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 6 -->
+                <article class="product-card" data-category="chaussure">
+
+                    <div class="product-image">
+                        <span class="badge sale">Promo</span>
+                        <div class="placeholder-image">👟</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Chaussures</p>
+                        <h3>Sneakers Urban</h3>
+                        <p class="product-description">
+                            Sneakers modernes pour un look urbain.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>6 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Sneakers Urban"
+                                data-price="6500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 7 -->
+                <article class="product-card" data-category="chaussure">
+
+                    <div class="product-image">
+                        <div class="placeholder-image">👞</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Chaussures</p>
+                        <h3>Chaussures Élégantes</h3>
+                        <p class="product-description">
+                            Parfaites pour les événements et cérémonies.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>5 000 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Chaussures Élégantes"
+                                data-price="5000">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUIT 8 -->
+                <article class="product-card" data-category="accessoire">
+
+                    <div class="product-image">
+                        <div class="placeholder-image">👜</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Accessoires</p>
+                        <h3>Sac à Main</h3>
+                        <p class="product-description">
+                            Sac élégant pour compléter votre tenue.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>3 500 HTG</strong>
+                            <button class="add-cart"
+                                data-name="Sac à Main"
+                                data-price="3500">
+                                Ajouter 🛒
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROMOTION ================= -->
+        <section class="promo-section">
+
+            <div class="promo-content">
+
+                <p>OFFRE SPÉCIALE</p>
+
+                <h2>
+                    Jusqu'à <span>30% de réduction</span>
+                    sur une sélection
+                </h2>
+
+                <p>
+                    Profitez de nos offres limitées avant qu'elles ne disparaissent.
+                </p>
+
+                <a href="#boutique" class="btn-primary">
+                    Voir les promotions
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POURQUOI NOUS ================= -->
+        <section class="features">
+
+            <div class="section-title">
+                <p>YOLE STORE</p>
+                <h2>Pourquoi nous choisir ?</h2>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature">
+                    <div>🚚</div>
+                    <h3>Livraison</h3>
+                    <p>
+                        Livraison disponible à Jacmel et ses environs.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div>💳</div>
+                    <h3>Paiement facile</h3>
+                    <p>
+                        Plusieurs solutions de paiement disponibles.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div>⭐</div>
+                    <h3>Qualité</h3>
+                    <p>
+                        Des produits sélectionnés avec soin.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div>📞</div>
+                    <h3>Service client</h3>
+                    <p>
+                        Une équipe disponible pour vous accompagner.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="contact-section">
+
+            <div class="contact-content">
+
+                <div>
+                    <p>CONTACTEZ-NOUS</p>
+
+                    <h2>
+                        Une question sur<br>
+                        un produit ?
+                    </h2>
+
+                    <p>
+                        Notre équipe est disponible pour vous aider
+                        et répondre à vos questions.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+
+                    <h3>YOLE STORE</h3>
+
+                    <p>📍 32, rue Normande, Jacmel, Haïti</p>
+
+                    <p>📞 33 284 730</p>
+
+                    <a href="https://wa.me/50933284730"
+                       target="_blank"
+                       class="whatsapp-button">
+                        💬 Commander sur WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    <span>YOLE</span> STORE
+                </div>
+
+                <p>
+                    Ton style. Ton choix. Ton identité.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Boutique</h3>
+
+                <a href="#hommes">Hommes</a>
+                <a href="#femmes">Femmes</a>
+                <a href="#chaussures">Chaussures</a>
+                <a href="#accessoires">Accessoires</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Informations</h3>
+
+                <a href="#accueil">Accueil</a>
+                <a href="#boutique">Boutique</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Contact</h3>
+
+                <p>📍 Jacmel, Haïti</p>
+                <p>📞 33 284 730</p>
+                <p>📱 WhatsApp</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 YOLE STORE. Tous droits réservés.
+            </p>
+
+            <p>
+                Site créé pour YOLE STORE
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PANIER ================= -->
+    <div id="cart-modal" class="cart-modal">
+
+        <div class="cart-content">
+
+            <button id="close-cart" class="close-cart">
+                ✕
+            </button>
+
+            <h2>🛒 Votre panier</h2>
+
+            <div id="cart-items">
+                <p>Votre panier est vide.</p>
+            </div>
+
+            <div class="cart-total">
+                <span>Total :</span>
+                <strong id="cart-total">0 HTG</strong>
+            </div>
+
+            <button id="checkout-button" class="checkout-button">
+                Passer la commande
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
